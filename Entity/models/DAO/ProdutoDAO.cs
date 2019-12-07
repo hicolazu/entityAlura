@@ -80,6 +80,21 @@ namespace Entity.models
             Console.ReadKey();
         }
 
+        public void listarPorNome(string nome)
+        {
+            var Produtos = repo.Produtos.Where(p => p.Nome == nome).OrderBy(p => p.Id);
+
+            Console.WriteLine(" Id  ---  Nome  ---  Valor\n");
+            
+            foreach (var p in Produtos)
+            {
+                Console.WriteLine(p.Id + "   " + p.Nome + "   " + p.Valor);
+            }
+
+            Console.WriteLine("\nDigite qualquer tecla para continuar...");
+            Console.ReadKey();
+        }
+
         public void Dispose()
         {
         }

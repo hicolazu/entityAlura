@@ -10,5 +10,8 @@ namespace Entity.models
         public int Id { get; internal set; }
         public string Nome { get; internal set; }
         public double Valor { get; internal set; }
+
+        public IList<PromocaoProduto> Promocoes { get; set; }
+
     }
 }
