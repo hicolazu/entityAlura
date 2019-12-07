@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entity.models;
+using System;
 
 namespace Entity
 {
@@ -6,7 +7,14 @@ namespace Entity
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var repoProduto = new ProdutoDAO();
+            var repoCompra = new CompraDAO();
+
+            repoProduto.adicionar();
+            repoProduto.listar();
+
+            repoCompra.adicionar();
+            
         }
     }
 }
