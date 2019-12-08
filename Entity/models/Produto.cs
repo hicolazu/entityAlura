@@ -13,5 +13,7 @@ namespace Entity.models
 
         public IList<PromocaoProduto> Promocoes { get; set; }
         public string Categoria { get; set; }
+
+        public IList<Compra> Compras { get; set; }
     }
 }
