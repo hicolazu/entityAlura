@@ -9,9 +9,10 @@ namespace Entity
     {
         static void Main(string[] args)
         {
-            var repoProduto = new ProdutoDAO();
+            //var repoProduto = new ProdutoDAO();
             //var repoCompra = new CompraDAO();
             //var repoPromocao = new PromocaoDAO();
+            var repoCliente = new ClienteDAO();
 
             //repoProduto.adicionar();
 
@@ -36,8 +37,11 @@ namespace Entity
 
             //repoPromocao.adicionar(promocaoDePascoa);
 
-           repoProduto.listarPorNome("Teste");
+            //repoProduto.listarPorNome("Teste");
+
+            repoCliente.adicionar();
 
         }
+
     }
 }
