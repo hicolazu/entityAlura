@@ -80,6 +80,12 @@ namespace Entity.models
             Console.ReadKey();
         }
 
+        public IList<Produto> listarPorCategoria(string categoria)
+        {
+            IList<Produto> Produtos = repo.Produtos.Where(p => p.Categoria == categoria).ToList();
+            return Produtos;
+        }
+
         public void listarPorNome(string nome)
         {
             var Produtos = repo.Produtos.Where(p => p.Nome == nome).OrderBy(p => p.Id);

@@ -12,6 +12,6 @@ namespace Entity.models
         public double Valor { get; internal set; }
 
         public IList<PromocaoProduto> Promocoes { get; set; }
-
+        public string Categoria { get; set; }
     }
 }
